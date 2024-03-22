@@ -8,13 +8,13 @@ def calculate_investment():
     duration = int(input("Please enter the length of investment you intend in years: "))
     interest_type = input("Please select by typing either simple or compound: ")
     
-    if interest_type.lower() == "simple":
+    if interest_type.lower() == "simple":                 # this is a calculation for simple interest
         investment_total = deposit * (1 + interest_rate / 100 * duration)
         print("##########")
         print(f"Your simple investment total is {investment_total:.2f} at {interest_rate} percent interest for {duration} years")
         print("##########")
         
-    elif interest_type.lower() == 'compound':
+    elif interest_type.lower() == 'compound':                       # this is a calculation for compound interst
         print("##########")
         investment_total = (deposit * math.pow((1 + interest_rate / 100), duration))
         print(f"Your compound investment total is {investment_total:.2f} at {interest_rate} percent interest for {duration} years")
@@ -25,7 +25,7 @@ def calculate_investment():
         
         return
 
-def calculate_bond():
+def calculate_bond():           #this is a calculation for bond interest
     house_value = int(input("Please enter the current value of the house: "))
     interest_rate = float(input("Please enter the rate of interest (you do not need to add the % symbol): "))
     month_duration = int(input("Please enter the number of months you plan to pay it back: "))
