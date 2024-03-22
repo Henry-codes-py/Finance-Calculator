@@ -1,3 +1,7 @@
+#This program allows a user to select from three different investment types, simple, compound and Bond - run the program and follow the instructions in the terminal to make your calculations
+
+
+
 import math
 
 print("###### WELCOME ######")
